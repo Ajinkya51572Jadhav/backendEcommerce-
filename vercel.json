@@ -1,0 +1,125 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env":{ 
+    "DB_URI_COMPAS":"mongodb://127.0.0.1:27017/Ecommerce",
+    "DB_URI": "mongodb://ajaj51572:3pWLEocpV2jTLABG@ac-gi0e57h-shard-00-00.o4fgjgd.mongodb.net:27017,ac-gi0e57h-shard-00-01.o4fgjgd.mongodb.net:27017,ac-gi0e57h-shard-00-02.o4fgjgd.mongodb.net:27017/Ecommerceproduct?ssl=true&replicaSet=atlas-811tlm-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "JWT_SECRET": "JKDFHDSGH095047LKHFJGFDGJHGCHGVDHG",
+    "JWT_EXPIRE": "5d",
+    "COOKIE_EXPIRE": "5",
+    "SMPT_SERVICE": "gmail",
+    "SMPT_HOST": "smtp.gmail.com",
+    "SMPT_PORT": "465",
+    "SMPT_MAIL": "ajaj51572@gmail.com",
+    "SMPT_PASSWORD": "vhxncyttysswyorw",
+    "FRONTED_URL": "http://localhost:3000",
+    "CLOUDINARY_NAME": "duzvvywub",
+    "CLOUDINARY_API_KEY": "828838829358996",
+    "CLOUDINARY_API_SECRET": "CMqie3fO-5Q1gAG91mn2XwSRzFk",
+    "STRIPE_API_KEY": "pk_test_51NuXHnSCgedhe9DMYOokZcLfZHSozatuDchT3zf1uN84NT2JK2AmXt0SUQeFbtlh56spBrkLFyoBYu40pOpiS1VH00EB1pFyVn",
+    "STRIPE_SECRET_KEY": "sk_test_51NuXHnSCgedhe9DMdUX8cQHfXeKdvd4uD4KLxrAqpOSkSWeWtotdU4Muogg2Oan8k3CmaNZkYDWD8gF1bNL22dW900AuBiPiAZ"
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
