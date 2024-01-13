@@ -33,11 +33,11 @@ router.route("/password/update").put( isAuthenticatedUser ,updatePassword);
 
 router.route("/me/update").put( isAuthenticatedUser ,updateProfile);
 
-router.route("/admin/users").get(isAuthenticatedUser , getAllUser); //  authorizeRoles("admin"),
+router.route("/admin/users").get(isAuthenticatedUser,authorizeRoles("admin") , getAllUser); //  authorizeRoles("admin"),
 
 router.route("/admin/user/:id")
-.get(isAuthenticatedUser , getSingleUser)   //authorizeRoles("admin"),
-.put(isAuthenticatedUser ,updateUserRole) // , authorizeRoles("admin")
-.delete(isAuthenticatedUser , deleteUser);  // authorizeRoles("admin"),
+.get(isAuthenticatedUser ,authorizeRoles("admin"), getSingleUser)   //authorizeRoles("admin"),
+.put(isAuthenticatedUser ,authorizeRoles("admin"),updateUserRole) // , authorizeRoles("admin")
+.delete(isAuthenticatedUser ,authorizeRoles("admin"), deleteUser);  // authorizeRoles("admin"),
 
 module.exports = router;
