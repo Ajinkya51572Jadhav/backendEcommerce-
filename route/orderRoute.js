@@ -16,11 +16,11 @@ router.route("/order/:id").get(getSingleOrder);
 
 router.route("/orders/me").get(isAuthenticatedUser,myOrders);  
 
-router.route("/admin/orders").get(isAuthenticatedUser,getAllOrders); //authorizeRoles("admin"),
+router.route("/admin/orders").get(isAuthenticatedUser,authorizeRoles("admin"),getAllOrders); //authorizeRoles("admin"),
 
 router.route("/admin/order/:id")
-.put(isAuthenticatedUser,updateOrder)  // authorizeRoles("admin"),
-.delete(isAuthenticatedUser,deleteOrder); //authorizeRoles("admin"),
+.put(isAuthenticatedUser,authorizeRoles("admin"),updateOrder)  // authorizeRoles("admin"),
+.delete(isAuthenticatedUser,authorizeRoles("admin"),deleteOrder); //authorizeRoles("admin"),
 
 
 
